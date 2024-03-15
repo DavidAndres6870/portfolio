@@ -1,0 +1,45 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "08/2023 - Present.",
+    title: "Data Analyst Volunteer",
+    company: "NotWorking to Networking",
+    description:
+      "The project utilized Eventbrite API for 184 events, ensuring accurate data. Python and AWS streamlined data processes, reducing manual work by 90%. Interactive dashboards visualized attendance data. Effective visualization aided decision-making, resulting in a 20% increase in meeting attendance.",
+    link: "https://www.instagram.com/notworking2networking/",
+    //link: "http://3.99.181.155:8050/",
+  },
+  {
+    date: "01/2023 - 04/2023",
+    title: "MyOpenMath Backend Assistant",
+    company: "Mohawk College - Building and Construction Department",
+    description:
+      "The role involved offering coding assistance to the Math department, utilizing PHP and MyOpenMath software while adhering to basic coding principles such as algorithm design and commenting. Following software development principles and methodologies was integral to the process. Additionally, the development and deployment of randomized algorithms were undertaken to augment the question pool, resulting in an impressive 85% increase.",
+  },
+  {
+    date: "09/2022 – 04/2023",
+    title: "Statistics / Programming / Mathematics Tutor",
+    company: "Self-employed",
+    description:
+      "The role involved tutoring students in programming, statistics, and mathematics, employing innovative teaching methods such as interactive coding exercises and practical statistical analysis projects to foster engagement and deepen comprehension of intricate concepts. Collaborating closely with students, weaknesses were identified and lessons customized to target individual learning needs, culminating in a remarkable 90% student satisfaction rate.",
+  },
+  {
+    date: "11/2018 – 03/2020",
+    title: "Junior Data Scientist - Internship",
+    company: "National university of Colombia - Department of Industrial Automation",
+    description:
+      "I contributed to creating and analyzing software tailored for image-based fracture analysis within the metallographic sector, achieving a commendable 90% accuracy and catalyzing automation advancements. This involved developing deep learning algorithms leveraging convolutional neural networks and various computer vision techniques like Haralick's texture analysis, FTA, Gabor filters, and Local Binary Pattern for fracture texture identification in metal materials. Furthermore, a rigorous testing protocol was devised and executed, yielding a notable 20% enhancement in accuracy compared to prior versions.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
